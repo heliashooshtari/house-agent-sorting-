@@ -1,0 +1,31 @@
+d={
+   'room':2 ,
+   's': 10 ,
+   'price': 15
+   }
+d1={}
+X=d.get('room')
+Y=d.get('s')
+Z=X*Y
+d1['total s']=Z
+P=d.get('price')
+T=Z*P
+d1['total price']=T
+
+D={ 
+   'room':1,
+   's':30,
+   'price':5
+   }
+X=D.get('room')
+Y=D.get('s')
+Z=X*Y
+d1['total s 2']=Z
+P=D.get('price')
+T=Z*P
+d1['total price 2']=T
+
+
+
+d1=list(d1.values())
+print(sorted(d1))
